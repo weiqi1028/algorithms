@@ -1,15 +1,14 @@
 /********************************************************
 Level order print a binary tree, use BST in this exercise
 ********************************************************/
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
 
 class LevelOrderPrint {
-    struct TreeNode {
-        int val;
-        TreeNode *left;
-        TreeNode *right;
-        TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-    };
-
 private:
     TreeNode *root;
 
